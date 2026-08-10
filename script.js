@@ -77,7 +77,7 @@ function createPlayer(name,input){
             col1.every(cell => cell === input) || col2.every(cell => cell === input) || col3.every(cell => cell === input) ||
             mainDiag.every(cell => cell === input) || oppDiag.every(cell => cell === input))
             {
-            console.log("Player One Wins");
+            console.log(`${activePlayer.name} Wins`);
         } else if(gameBoard.board.every(cell => cell !== "0")) {
             console.log("It's a draw!");
         } else{
