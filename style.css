@@ -3,3 +3,50 @@
     padding: 0;
 }
 
+.body {
+    display: grid;
+    width: 1vw;
+    height: 1vh;
+}
+
+.container {
+    justify-self: center;
+    text-align: center;
+}
+
+.game-board {
+    font-size: 250px;
+    min-height: 894px;
+    width: 0.5vw;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.game-board > div {
+    text-align: center;
+}
+
+.r1c1,
+.r1c2,
+.r1c3 {
+    border-bottom: 10px solid black;
+}
+
+.r3c1,
+.r3c2,
+.r3c3 {
+    border-top: 10px solid black;
+}
+
+.r1c2,
+.r2c2,
+.r3c2 {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+
